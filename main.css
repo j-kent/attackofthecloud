@@ -365,7 +365,7 @@
    align-self: center;
  }
  
- @media (min-width: 40rem) {
+ @media (min-width: 800px) {
    .row {
      flex-direction: row;
      margin-left: -1.0rem;
@@ -373,7 +373,7 @@
    }
    .row .column {
      margin-bottom: inherit;
-     padding: 0 1.0rem;
+     padding: 0 2rem;
    }
  }
  
@@ -548,7 +548,10 @@
 /* Custom */
 
 .container {
-    max-width: 90rem;
+    /* max-width: 90rem; */
+}
+.row {
+  justify-content: center;
 }
 nav {
     background: #fff;
@@ -590,41 +593,44 @@ header .headline {
     width: 24rem;
     display: inline-block;
 }
-@media (max-width: 650px) {
+@media (max-width: 800px) {
+    .row .column.column-33 {
+      max-width: 100%;
+      flex: 1 1 auto;
+    }
     nav {
         text-align: center;
+        position: relative;
     }
     nav .menu {
         float: none;
         text-align: center;
     }
     header {
-        padding: 11rem 0 3rem 0;
+      padding-top: 4rem;
     }
   }
 
 .featured {
-    padding-top: 10rem;
+    padding-top: 4rem;
+}
+.section-title {
+  text-align: center;
 }
 .feature-card {
-    /* border: .1rem solid #eeeeee;
-    background: #f9f9f9; */
-    border-radius: 8px;
-    margin: 3rem 0;
-    display: block;
-    /* overflow: hidden; */
     color: #393E46;
 }
-.feature-card:hover {
-    background-color: #FFF3EA;
-}
+
 .feature-card .row {
-    min-height: 16rem;
+    /* min-height: 16rem; */
 }
-.feature-card [class^="thumbnail"] {
+.feature-card .thumbnail {
+    height: 16rem;
     background-size: cover;
     border-radius: 8px;
     border: 0.1rem solid #eee;
+    /* background-position-x: center; */
+    /* background-position-y: center; */
 }
 .thumbnail-pixilart {
     background-image: url(pixilart.png);
@@ -644,14 +650,26 @@ header .headline {
 .thumbnail-diagrams {
     background-image: url(diagrams.png);
 }
+.thumbnail-sculptfab {
+  background-image: url(sculptfab.png);
+}
+.thumbnail-vectary {
+  background-image: url(vectary.png);
+}
+.thumbnail-sketchup {
+  background-image: url(sketchup.jpg);
+}
+.thumbnail-clara {
+  background-image: url(clara.jpg);
+}
 .feature-card .feature-content {
-    padding: 2rem;
+    padding-bottom: 6rem;
 }
 .feature-card .feature-title {
-    margin: 0 0 .5rem 0;
+    margin: .5rem 0 .5rem 0;
 }
 .feature-card .feature-desc {
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
 .feature-card .feature-content [class^="tag"] {
     font: 1.5rem monospace;
