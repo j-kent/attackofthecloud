@@ -662,6 +662,9 @@ header .headline {
 .thumbnail-clara {
   background-image: url(clara.jpg);
 }
+.thumbnail-framer {
+  background-image: url(framer.png);
+}
 .feature-card .feature-content {
     padding-bottom: 6rem;
 }
@@ -672,16 +675,14 @@ header .headline {
     margin-bottom: .5rem;
 }
 .feature-card .feature-content [class^="tag"] {
+  display: inline-block;
     font: 1.5rem monospace;
     letter-spacing: normal;
     background-color: #eee;
     padding: .3rem;
     border-radius: 3px;
-    margin-right: .2rem;
-}
-.feature-card .feature-title .tag {
-    vertical-align: middle;
-    margin-left: .5rem;
+    white-space: nowrap;
+    margin-top: .5rem;
 }
 .feature-card .tag-pixel {
     background-color: #FDD9D2 !important;
