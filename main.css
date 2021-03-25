@@ -576,25 +576,33 @@ nav .menu .button {
     padding: 0 2rem;
     line-height: 5rem;
 }
-header {
+header,
+footer {
     background-image: url(bg-pattern.png);
     border-bottom: .1rem solid #eeeeee;
-    padding: 7rem 0 3rem 0;
+    padding: 3rem 0;
     text-align: center;
 }
 header img {
     width: 180px;
     vertical-align: -7.2rem;
 }
-header .headline {
+header .headline,
+footer .headline {
     background: #fff;
     border-radius: 8px;
     padding: 1rem;
-    width: 24rem;
+}
+header img {
+  padding-top: 4rem;
+}
+header .headline {
     display: inline-block;
+    width: 24rem;
 }
 @media (max-width: 800px) {
-    .row .column.column-33 {
+    .row .column.column-33,
+    .row .column.column-50 {
       max-width: 100%;
       flex: 1 1 auto;
     }
@@ -606,8 +614,8 @@ header .headline {
         float: none;
         text-align: center;
     }
-    header {
-      padding-top: 4rem;
+    header img {
+      padding-top: 0;
     }
   }
 
@@ -670,6 +678,11 @@ header .headline {
 }
 .feature-card .feature-title {
     margin: .5rem 0 .5rem 0;
+}
+.feature-card .feature-title a::after {
+  vertical-align: middle;
+  content: url(exit-icon.svg);
+  margin-left: 1rem;
 }
 .feature-card .feature-desc {
     margin-bottom: .5rem;
