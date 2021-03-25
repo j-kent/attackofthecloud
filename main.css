@@ -547,6 +547,10 @@
 
 /* Custom */
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
     /* max-width: 90rem; */
 }
