@@ -682,6 +682,21 @@ header .headline {
 .thumbnail-uxpin {
   background-image: url(uxpin.png);
 }
+.thumbnail-marvel {
+  background-image: url(marvel.png);
+}
+.thumbnail-proto {
+  background-image: url(proto.png);
+}
+.thumbnail-nunustudio {
+  background-image: url(nunustudio.jpg);
+}
+.thumbnail-construct {
+  background-image: url(construct.jpg);
+}
+.thumbnail-flowlab {
+  background-image: url(flowlab.jpg);
+}
 .feature-card .feature-content {
     padding-bottom: 6rem;
 }
