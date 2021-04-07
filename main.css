@@ -551,9 +551,9 @@ html {
   scroll-behavior: smooth;
 }
 
-.container {
-    /* max-width: 90rem; */
-}
+/* .container {
+    max-width: 90rem;
+} */
 .row {
   justify-content: center;
 }
@@ -696,6 +696,9 @@ header .headline {
 }
 .thumbnail-flowlab {
   background-image: url(flowlab.jpg);
+}
+.thumbnail-playcanvas {
+  background-image: url(playcanvas.jpg);
 }
 .feature-card .feature-content {
     padding-bottom: 6rem;
